@@ -1,9 +1,29 @@
-body
+
+.center
 {
-    background-color: #CBE2F6;
-    text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-h2
+.set
 {
-    font-size: 20px;
+  font-size: 15px;
 }
+nav a{
+	padding: 15px;
+	padding-bottom: 4px;
+	font-size: 1.8em;
+	text-decoration: none;
+	color:black;
+}
+nav a:hover{
+	border-bottom: 2px orange solid;
+	font-size: 2em;
+	transition: .9s;
+}
+nav{
+	border: 1px solid black;
+	outline-style: solid;
+	outline-color: black;
+}
+p {margin-bottom: 1.143em;}
+* p:last-child {margin-bottom: 0;}
