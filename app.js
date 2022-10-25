@@ -5,22 +5,22 @@ app.use(express.static("public"));
 
 app.get("/", function(req, res)
 {
-    res.render("index.html");
+    res.render("home.html");
 });
 
-app.get("/earth", function(req, res)
+app.get("/directions", function(req, res)
 {
-   res.render("earth.html"); 
+   res.render("directions.html"); 
 });
 
-app.get("/mercury", function(req, res)
+app.get("/information", function(req, res)
 {
-    res.render("mercury.html");
+    res.render("information.html");
 });
 
-app.get("/venus", function(req, res)
+app.get("/RSVP", function(req, res)
 {
-    res.render("venus.html");
+    res.render("/RSVP.html");
 });
 
 app.listen(process.env.PORT, process.env.IP, function()
