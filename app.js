@@ -3,6 +3,8 @@ const app = express();
 app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
 
+port = 3000
+
 app.get("/", function(req, res)
 {
     res.render("home.html");
@@ -18,12 +20,11 @@ app.get("/information", function(req, res)
     res.render("information.html");
 });
 
-app.get("/RSVP", function(req, res)
+app.get("/rsvp", function(req, res)
 {
-    res.render("/RSVP.html");
+    res.render("rsvp.html");
 });
 
-app.listen(process.env.PORT, process.env.IP, function()
-{
-    console.log("Express server is running");
-});
+app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`)
+  })
